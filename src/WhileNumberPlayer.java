@@ -8,17 +8,19 @@ public class WhileNumberPlayer {
     //for limit= 30, output would be 1 4 6 9 16 25
     public void printSquaresUptoLimit() {
         int i = 1;
-        while (i * i < 30) {
+        while (i * i < limit) {
             System.out.print(i * i + " ");
             i++;
         }
+        System.out.println();
     }
 
     public void printCubesUptoLimit() {
         int i = 1;
-        while (i * i * i < 30) {
+        while (i * i * i < limit) {
             System.out.print(i * i * i + " ");
             i++;
         }
+        System.out.println();
     }
 }
