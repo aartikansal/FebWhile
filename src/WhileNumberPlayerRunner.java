@@ -8,8 +8,9 @@ public class WhileNumberPlayerRunner {
         player.printCubesUptoLimit();
         //for limit= 30, output would be 18 27*/
         Scanner scanner = new Scanner(System.in);
-        int number = 0;
+        int number = -1;
         do {
+            if(number!= -1)//added a guard condition
             System.out.println("Cube is " + (number * number * number));
             System.out.print(" Enter a number :");
             number = scanner.nextInt();
